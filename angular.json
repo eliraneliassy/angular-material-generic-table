@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "allegro-table": {
+      "root": "projects/allegro-table",
+      "sourceRoot": "projects/allegro-table/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/allegro-table/tsconfig.lib.json",
+            "project": "projects/allegro-table/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/allegro-table/src/test.ts",
+            "tsConfig": "projects/allegro-table/tsconfig.spec.json",
+            "karmaConfig": "projects/allegro-table/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/allegro-table/tsconfig.lib.json",
+              "projects/allegro-table/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "allegro-client-ui-components"
