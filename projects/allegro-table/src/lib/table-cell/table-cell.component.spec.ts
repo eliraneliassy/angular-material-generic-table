@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AllegroTableComponent } from './allegro-table.component';
+import { TableCellComponent } from './table-cell.component';
 
-describe('AllegroTableComponent', () => {
-  let component: AllegroTableComponent;
-  let fixture: ComponentFixture<AllegroTableComponent>;
+describe('TableCellComponent', () => {
+  let component: TableCellComponent;
+  let fixture: ComponentFixture<TableCellComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AllegroTableComponent ]
+      declarations: [ TableCellComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AllegroTableComponent);
+    fixture = TestBed.createComponent(TableCellComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
