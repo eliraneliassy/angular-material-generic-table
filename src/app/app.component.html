@@ -1,1 +1,10 @@
-<lib-allegro-table></lib-allegro-table>
+<al-table [dataSource]="data" 
+[displayedColumns]="columns" 
+(loadMore)="loadMore()"
+(selected)="selected($event)" 
+(filter)="onFilter($event)" 
+(sort)="onSort($event)" 
+(rowClicked)="rowClicked($event)"
+(columnFiltered)="onColumnFiltered($event)"
+(rowRightClicked)="rowRightClicked($event)">
+</al-table>
